@@ -16,6 +16,12 @@
     <properties>
         <java.version>11</java.version>
     </properties>
+
+    <modules>
+        <module>vsockserver</module>
+        <module>vsockclient</module>
+    </modules>
+
     <build>
         <plugins>
             <plugin>
