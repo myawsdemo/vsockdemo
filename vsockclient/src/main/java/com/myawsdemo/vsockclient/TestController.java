@@ -16,7 +16,7 @@ public class TestController {
     @GetMapping("test")
     public String test() {
         try {
-            VSock sock = new VSock(new VSockAddress(3, 5000));
+            VSock sock = new VSock(new VSockAddress(5, 5000));
             sock.getOutputStream()
                     .write(String.valueOf(System.currentTimeMillis()).getBytes(StandardCharsets.UTF_8));
             byte[] b = new byte[4096];
