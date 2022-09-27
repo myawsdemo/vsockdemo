@@ -6,7 +6,6 @@
         <groupId>com.myawsdemo</groupId>
         <artifactId>vsockdemo</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <artifactId>vsockserver</artifactId>
     <version>0.0.1-SNAPSHOT</version>
