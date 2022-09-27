@@ -2,7 +2,7 @@ FROM amazoncorretto:8u302
 
 WORKDIR /app
 
-COPY target/nitro-enclaves-simple-echo-enclave-1.0.0-SNAPSHOT.jar ./app.jar
+COPY target/vsockserver-0.0.1-SNAPSHOT.jar ./app.jar
 
 COPY libs/libvsockj-native-1.1.so /usr/lib/
 COPY libs/nsm-cli ./nsm-cli
