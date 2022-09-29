@@ -3,6 +3,8 @@ package com.myawsdemo.vsockserver;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.nio.charset.StandardCharsets;
+
 @SpringBootApplication
 public class VsockserverApplication {
 
@@ -28,13 +30,8 @@ public class VsockserverApplication {
             e.printStackTrace();
         }*/
 
-        byte[] buffer = {};
-        int cid = 0, port = 0;
-        for (int i = 0; i < args.length; i++) {
-            if (args[i].equals("-cid")) cid = Integer.parseInt(args[++i]);
-            else if (args[i].equals("-port")) port = Integer.parseInt(args[++i]);
-            else buffer = decode(args[i]);
-        }
+        byte[] buffer = "Test vsock protocol".getBytes(StandardCharsets.UTF_8);
+        int cid = 5, port = 5000;
         System.out.printf("open(%d, %d)\n", cid, port);
         long vsock = VSock.open();
         long error = VSock.connect(vsock, cid, port);
