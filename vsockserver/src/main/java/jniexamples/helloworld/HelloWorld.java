@@ -16,4 +16,6 @@ public class HelloWorld {
     }
 
     public static native void helloNative();
+
+    public static native void testClient();
 }
