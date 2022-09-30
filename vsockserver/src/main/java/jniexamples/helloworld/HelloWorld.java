@@ -1,4 +1,4 @@
-package com.myawsdemo.vsockserver;
+package jniexamples.helloworld;
 
 public class HelloWorld {
 
