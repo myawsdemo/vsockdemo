@@ -10,6 +10,5 @@ public class VsockserverApplication {
     public static void main(String[] args) {
         SpringApplication.run(VsockserverApplication.class, args);
         HelloWorld.helloNative();
-        HelloWorld.testClient();
     }
 }
